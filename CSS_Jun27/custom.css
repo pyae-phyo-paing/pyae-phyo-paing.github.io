@@ -10,3 +10,7 @@ p {
     word-spacing: 20px;
     line-height: 30px;
 }
+
+a[title="google"]{
+    letter-spacing: 20px;
+}
