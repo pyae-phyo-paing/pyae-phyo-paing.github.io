@@ -140,23 +140,32 @@
             <hr>
             <h3 align="center" id="com">Leave a Comment</h3>
             <br><br>
+            <div>
             <form action="request.php" method="get" align="center">
-                <label for="name" >Name:</label>
+                <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" name="user_name" id="name">
               <br><br>
-              <label for="email">Email:</label>
+              <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;
               <input type="email" name="user_email" id="email">
               <br><br>
-              <label for="comment">Comment:</label>
-              <textarea name="text" id="comment" cols="30" rows="10" align="center"></textarea>
+              <table align="center">
+                <tr>
+                    <td>
+              <label for="comment">Comment:</label>&nbsp;&nbsp;</td>
+              <td>
+              <textarea name="text" id="comment" cols="30" rows="10"></textarea></td>
+            </tr>
+              </table>
               <br><br>
               <button type="submit">Add</button>
-              
+              </table>
             </form>
+            </div>
             <hr>
             <footer>
                 <p align="center">pyae-phyo-paing.github.com &copy; All right reserved. <br> By P.P.P </p>
             </footer>
+            
 
 </body>
 </html>
