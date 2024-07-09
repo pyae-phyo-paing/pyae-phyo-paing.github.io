@@ -1,0 +1,46 @@
+h1{
+text-align: center;
+color: red;
+}
+
+/* border */
+.borderone{
+    border: 5px dotted red;
+}
+
+.bordertwo{
+    border-top: 10px solid yellow;
+    border-left: 10px solid yellow;
+}
+
+.borderthree{
+    border-color: brown yellow;
+    /* border-style: solid; */
+    /* T & R & B & L */
+    /* border-style: solid dotted; */
+    /* T/B & L/R */
+    /* border-style: solid dotted double; */
+    /* T & L&R & B */
+    border-style: solid dotted double dashed;
+      /* T & R & B & L */
+}
+
+.borderwidth{
+    border-style: solid;
+    border-width: 3px 30px;
+}
+/* margin */
+.marginone{
+    border: 1px solid green;
+    margin: 10px 30px 40px 100px;
+}
+
+.margintwo{
+    margin-top: 100px;
+}
+
+.padding{
+    /* padding: 100px; */
+    padding-top: 50px;
+    border: 1px solid red;
+}

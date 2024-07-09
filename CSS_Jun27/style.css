@@ -28,9 +28,9 @@ a[title="google"]{
 }
 
 /* Descendant Selector */
-div p {
+ /* div p {
     background-color: yellow;
-}
+} */
 
 /* Child Selector */
 div>p {
@@ -73,4 +73,55 @@ h2 a:active {
     border: 10px dotted black;
     line-height: 30px;
     letter-spacing: 20px;
+}
+
+/* layout */
+
+.Inline{
+    border: 2px solid red;
+    display: inline-block;
+    width: 400px;
+}
+
+.block{
+    border: 2px solid green;
+    width: 400px;
+    display: inline-block;
+}
+
+/* float */
+
+.float_right img{
+    width: 40%;
+    float: right;
+}
+.clear{
+    clear:both;
+}
+
+.float_left img{
+    width: 40%;
+    float: left;
+}
+
+/* grid */
+.gridone div, .gridtwo div, .gridthree div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.gridone, .gridtwo, .gridthree{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridtwo{
+    grid-column-gap: 40px;
+}
+
+.gridthree{
+    grid-row-gap: 40px;
+    /* grid-gap: 40px; */
+    grid-column-gap: 70px;
 }
