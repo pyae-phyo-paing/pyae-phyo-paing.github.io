@@ -105,13 +105,13 @@ h2 a:active {
 }
 
 /* grid */
-.gridone div, .gridtwo div, .gridthree div{
+.gridone div, .gridtwo div, .gridthree div, .gridfour div, .gridfive div{
     padding: 20px;
     color: white;
     text-align: center;
 }
 
-.gridone, .gridtwo, .gridthree{
+.gridone, .gridtwo, .gridthree, .gridfour, .gridfive{
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -124,4 +124,71 @@ h2 a:active {
     grid-row-gap: 40px;
     /* grid-gap: 40px; */
     grid-column-gap: 70px;
+}
+
+
+.columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rowadd{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+/* Position */
+.parent_absolute{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid red;
+    position: relative;
+}
+
+.absolute{
+    width: 400px;
+    height:200px;
+    border: 2px solid green;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}
+
+.parent_relative{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid yellow;
+}
+
+.relative{
+    width: 400px;
+    height: 200px;
+    border: 2px solid brown;
+    position: relative;
+    top: 10px;
+    left: 150px;
+}
+
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+/* font */
+.online{
+  font-family: "Playwrite BE VLG", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "playwrite";
+    src: url(Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+.offline{
+    font-family: "playwrite";
 }
