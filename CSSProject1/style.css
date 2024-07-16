@@ -7,7 +7,7 @@
     height: 100px;
     width: 105px;
     margin-left: 80px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .nav_item{
@@ -16,7 +16,7 @@
 
 .nav_item li{
     display: inline-block;
-    margin-top: 65px;
+    margin-top: 50px;
     margin-right: 40px;
 }
 
@@ -82,33 +82,166 @@
     margin-left: 10px;
     
 }
+
+.step1_button:hover{
+    background-color:blue;
+    color: white;
+}
 /* end body step1 */
 
 /* start deli */
 
-.deli_item p{
-    display: inline-block;
-    padding-left: 3px;
-    position: relative;
-    top: 5px;
-}
-
-.deli_text2{
-    color: rgb(124, 117, 117);
-}
-
-.deli_item{
-    display: inline-block;
-    border: 2px solid gray;
-    padding: 10px 85px 10px 10px;
-    border-radius: 5px;
-    align-items: center;
-}
-
-.deli{
+.service{
+    margin: 50px 60px 0px;
     display: grid;
-    grid-template-columns: auto auto auto auto ;
-    margin: 20px 50px;
-    justify-content: space-evenly;
-    grid-column-gap: 0px;
+    grid-template-columns: auto auto auto auto; 
+    grid-column-gap: 20px;
+}
+
+.service_text{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.service_title{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.service_desc{
+    color: gray;
+}
+
+.service div{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* end deli */
+
+/* start Promotion part 1 */
+
+.promotion_title h2{
+    margin-left: 80px;
+    margin-top: 35px;
+}
+
+.promotion_line{
+    border: 2px solid red;
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+
+/* Promotion Photos */
+
+.promotion{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+    margin: 10px 80px 0px;
+}
+
+.promotion_image{
+    width: 100%;
+}
+
+.promotion_item{
+    border: 2px solid gray;
+    border-radius: 5px;
+    position: relative;
+}
+
+.promotion_brand{
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.price{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.promotion_price{
+    display: block;
+    color: red;
+}
+
+.normal_price{
+    color: red;
+    text-decoration: line-through;
+}
+
+/* end promotion part 1 */
+
+/* start promotion part 2 */
+
+.newarrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px ;
+    grid-row-gap: 10px;
+    margin: 10px 80px 0px;
+}
+
+.newarrival_image{
+    width: 100%;
+}
+
+.newarrival_item{
+    border: 2px solid gray;
+    border-radius: 5px;
+    position: relative;
+}
+
+.newarrival_text{
+    margin-left: 20px;
+}
+
+.newarrival_brand{
+    display: block;
+}
+
+.wish_heart{
+    position: absolute;
+    bottom: 3%;
+    left: 85%;
+}
+
+.wish_heart:hover{
+    color: red;
+}
+
+.hide_icon{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+}
+
+.hide_eye, .hide_cart{
+    border: 1px solid gray;
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.hide_eye:hover,.hide_cart:hover{
+    background-color: blue;
+    color: white;
+
+}
+
+.newarrival_image:hover{
+    opacity: .5;
+}
+
+.newarrival_item:hover .hide_icon{
+    opacity: 1;
 }
