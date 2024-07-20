@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Start Nav Bar */
+.logo{
+    width: 80px;
+    height: 60px;
+    margin-left: 70px;
+    margin-top: 2px;
+}
+
+.nav_title{
+    display: inline-block;  
+    position: relative;
+    bottom: 25px;
+    left: 700px;
+}
+
+.contact{    
+    padding-right: 40px;
+    text-decoration: none;
+}
+
+.nav_bar{
+    margin-top: 0px;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, .5);
+}
+
+.nav{
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.contact:hover{
+    color: red;
+    font-size: 20px;
+}
+
+/* End Nav Bar */
+
+/* Start Body Step 1 */
+
+
+.back_image{
+    width: 100%;
+    height: 600px;
+}
+
+.back_image_text{
+    position:absolute;
+    top: 220px;
+    left: 100px;
+    color:yellow;
+    border: 2px solid rgb(75, 75, 70);
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px;
+    background-color: rgba(22, 24, 26, 0.4);
+    letter-spacing: 1px;
+}
+
+.back_image_text p{
+    padding-top: 7px;
+}
+
+/* End Body Step 1 */
+
+/* Start Body Step 2 */
+
+.sub_title{
+    margin-top: 30px;
+    margin-left: 300px;
+}
+
+.sub_title_bar{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 650px;
+    margin-left: 300px;
+}
+
+/* Start KMD Exam Center */
+.kmd_body_logo{
+    width: 350px;
+    height: 280px;
+    margin-left: 100px;
+}
+
+.kmd_centers{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 30px 0px ;
+
+}
+
+.centers_names{
+    margin-top: 90px;
+}
+
+.center_name_text{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.centers_names{
+    line-height: 40px;
+}
+
+
+.kmd_exam_center_bar{
+    border: 1px solid gray;
+    width: 90%;
+    margin: 0px 50px 0px;
+}
+
+/* End KMD Exam Center */
+
+.home_base_notic_logo{
+    width: 350px;
+    height: 280px;
+    margin-left: 100px;
+}
+
+.home_base_notic{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 30px 0px ;
+}
+
+.home_base_exam_item_collect{
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+.home_base_exam_notic_text{
+    font-size: 25px;
+}
+
+.home_base_exam_notic_item{
+    line-height: 30px;
+}
+
+.view_exam_list{    /*button */
+    text-decoration: none; 
+    display: inline-block;
+    padding:20px ;
+    font-size: 15px;
+    color: white;
+}
+
+.exam_list{
+    margin-top: 30px;
+}
+
+.view_exam_list2{
+    margin-left: 20px;
+}
+
+.view_exam_list3{
+    border: 0px solid gray;
+    border-radius: 50px;
+    background-color: blue;
+}
+
+.view_exam_list3:hover{
+    background-color: red;
+}
+
+.view_exam_list:hover{
+    color: black;
+}
+
+/* End Home Base Notic */
