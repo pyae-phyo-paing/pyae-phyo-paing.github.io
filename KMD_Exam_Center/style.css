@@ -174,3 +174,136 @@
 }
 
 /* End Home Base Notic */
+
+/* Start Join With KMD */
+
+.greet_photo{
+    width: 450px;
+    height: 450px;
+    margin-left: 50px;
+}
+
+.join_with_kmd{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.contact_me{
+    margin-top: 50px;
+    margin-right: 130px;
+}
+
+.contact_text{
+    font-size: 20px;
+}
+
+.contact_text_collect{
+    margin-top: 20px;
+}
+
+.contact_box_collect{
+    margin-top: 20px;
+}
+
+.contact_item{
+    font-size: 20px;
+}
+
+.contact_box{
+    height: 35px;
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.box_button{
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    margin-left: 130px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+.box_button_text{
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.box_button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+/* End Start Join With KMD */
+
+/* Start Footer */
+
+.footer_logo{
+    width: 110px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: rgb(46, 178, 211);
+    height: 130px;
+}
+
+.feedback{
+    margin-top: 20px;
+}
+
+.feedback_icon{
+    margin-top: 10px;
+}
+.feedback_text{
+    font-size: 17px;
+}
+
+.footer_bar_text_collect{
+    margin-top: 10px;
+}
+
+.footer_bar_text_item{
+    margin-top: 10px;
+}
+
+.footer_bar_text{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.footer_bar_text:hover{
+    color: black;
+    font-size: 18px;
+}
+
+.follow_up_collect{
+    margin-top: 15px;
+}
+
+.follow_up_item{
+    margin-top: 7px;
+}
+
+.follow_up_text{
+    margin-left: 10px;
+}
+
+.follow_up_icon_collect{
+    margin-top: 15px;
+}
+
+.follow_up_icon{
+    margin-left: 5px;
+}
