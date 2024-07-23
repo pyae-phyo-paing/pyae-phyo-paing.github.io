@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For Loop Lesson</h1>
+    <script>
+        // for loop syntax
+        // for (initialization; condition ; updated) { 
+        // code
+        // }
+
+        for(let i = 1; i <= 10; i++){
+            // code
+            document.write(`<h1> Hello World ${i} </h1>`)
+        }
+
+        let laptopLists = ['Acer','Dell','Lenovo','Asus','Hp'];
+
+        for (let j = 0; j < laptopLists; j++) {
+            document.write(`<h1> ${laptopLists[j]} </h1>`);
+            
+        }
+
+        for (let k = 1; k <= 12; k++){
+            document.write(`<h1> 12 x ${k} = ${12 * k} </h1>`)
+        }
+
+        for (let s = 0; s < 5; s++){
+            
+            for (let h = 0; h <= s; h++ ){
+                document.write(`*`)
+            }
+            document.write(`<br>`)
+        }
+
+
+        // homework
+        // *****
+        // ****
+        // ***
+        // **
+        // *
+
+        // while loop
+        // syntax
+        // while (condition){
+        // code
+        //  }
+
+        let num = 5;
+        while (num <= 10){
+            // code
+            document.write(`Your number is ${num} <br>`);
+            // updated
+            num++;
+        }
+
+        // do while
+        // do {
+        // code
+        // updated
+        // } while (condition);
+
+        let no = 20;
+        do {
+            // code
+            document.write(`Your number is = ${no} <br>`);
+            // updated
+            no+=5;
+        }while(no < 100)
+    </script>
+</body>
+</html>
