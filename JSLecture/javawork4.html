@@ -6,19 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Number Game</h1>
+    <h1>You did it!</h1>
     <script>
-        let secrectNumber = 8;
-        let gameBox = prompt("Write a number");
-         if(gameBox > secrectNumber){
-            document.write("Your Number is greater than secrect number.You can try again!");
+        let secrectNumber = 10;
+        let gameBox = prompt("Guss a number you wish between 1 and 20");
+        let tryTime = 0;
+        while(gameBox != secrectNumber){
+        if (gameBox > secrectNumber){
+            alert("Your number is greater than secrect number.");
         }else{
-            document.write("Your Number is less than secrect number.You can try again!");
+            alert("Your number is less than secrect number.")
         };
-    
+        gameBox = prompt("Guss a number you wish between 1 and 20");
+        tryTime++;}
+        document.write(`You tried ${tryTime} time.`)
 
-
-        
     </script>
 </body>
 </html>
