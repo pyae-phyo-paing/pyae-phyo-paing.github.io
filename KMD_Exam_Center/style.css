@@ -394,7 +394,7 @@
 .home_base_exam_detail_button{
     position: absolute;
     left: 80px;
-    top: 170px;
+    top: 140px;
     border: 1px solid gray;
     border-radius: 30px;
     width: 120px;
@@ -416,3 +416,118 @@
 }
 
 /* End Home Based Exam Body Step 2 */
+
+
+/* Start Center Based Exam Body Step 1 */
+
+.center_base_exam_backgound_text_collect{
+    position: absolute;
+    top: 500px;
+    left: 155px;
+    border: 0px solid gray;
+    border-radius: 30px;
+    background-color: rgba(69, 191, 228, 0.2);
+    width: 280px;
+}
+
+/* Start About of KMD Exam Center  */
+
+.our_service{
+    margin-left: 600px;
+    margin-top: 20px;
+}
+
+.our_sevice_line{
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 590px;
+}
+
+.our_service_text{
+    margin: 20px 20px 0px;
+    font-size: 19px;
+}
+
+.our_sevice_image{
+    width: 40%;
+    margin-left: 100px;
+}
+
+.our_service_notice{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+}
+
+.our_service_notice_text{
+    position: relative;
+    right: 350px;
+    top: 100px;
+    line-height: 20px;
+}
+
+.kmd_exam_center{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.kmd_exam_center_subtext{
+    font-size: 20px;
+}
+
+/* Start Register Now */
+
+.register_now_title{
+    margin-left: 600px;
+    margin-top: 40px;
+
+}
+
+.register_now_bar{
+    border: 1px solid blue;
+    border-radius: 5px;
+    width: 150px;
+    margin-left: 595px;
+}
+
+.register_now_table{
+    margin-top: 10px;
+    margin-left: 500px;
+}
+
+.register_now_table_item{
+    font-size: 20px;
+}
+
+.register_now_table_data_box{
+    width: 250px;
+    height: 40px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px ;
+}
+
+.register_now_data_submit_box{
+    margin-left: 130px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+.register_now_data_submit_text{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.register_now_data_submit_box:hover{
+    background-color: red;
+    cursor: pointer;
+}
