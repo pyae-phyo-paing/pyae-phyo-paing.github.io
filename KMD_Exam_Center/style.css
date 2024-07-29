@@ -476,7 +476,7 @@
     font-size: 20px;
 }
 
-/* Start Register Now */
+/* Start Register to Contact */
 
 .register_now_title{
     margin-left: 600px;
@@ -487,7 +487,7 @@
 .register_now_bar{
     border: 1px solid blue;
     border-radius: 5px;
-    width: 150px;
+    width: 210px;
     margin-left: 595px;
 }
 
@@ -528,6 +528,73 @@
 }
 
 .register_now_data_submit_box:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+/* End Register to Contact */
+/* End About of KMD Exam Center */
+
+/* Start Login  */
+.signup_box{
+    margin-top: 50px;
+    margin-left: 380px;
+    margin-bottom: 50px;
+}
+
+.signup_table_data_box{
+    width: 300px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.signup_table_data_text{
+    text-align: right;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.signup_title{
+    margin-left: 250px;
+    margin-top: 40px;
+}
+
+.signup_button{
+    margin-left: 250px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+    background-color: blue;
+}
+
+.signup_button_text{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.signup_box{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .4);
+    width: 700px;
+    height: 500px;
+}
+
+.signup_table{
+    padding: 20px;
+}
+
+.signup_button:hover{
     background-color: red;
     cursor: pointer;
 }
