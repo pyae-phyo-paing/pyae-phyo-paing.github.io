@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci illum repellendus quasi tenetur facere minima quis quod saepe, magnam sit. Sit asperiores possimus laboriosam eligendi sunt? Fugiat atque numquam hic ad impedit repudiandae aliquid reprehenderit porro tempora, reiciendis facilis deleniti modi autem animi rerum temporibus veniam quos iusto corporis itaque nobis. Ipsa, eligendi autem corporis sunt incidunt aliquam ex cumque consectetur sit explicabo qui saepe ut delectus omnis. Iure aperiam cumque tempora ipsam doloremque qui eligendi, maxime cupiditate optio amet, excepturi harum minima dolores perspiciatis dolorem! Asperiores esse magni voluptatibus, fuga sit nobis recusandae a ullam natus. Magnam, deserunt.
+    </p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade_out">FadeOut</button>
+    <button id="fade_in">FadeIn</button>
+    <button id="fade_toggle">FadeToggle</button>
+    <button id="fade_to_1">FadeTo 1</button>
+    <button id="fade_to_2">FadeTo 2</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            // hide, show, toogle စတဲ့ effect တွေရဲ့ () ထဲမှာ speed, callbackfunction တွေ ထည့်လို့ရတယ်
+            $('#hide').click(function(){
+                $('p').hide(1000, function(){
+                    alert("p hide")
+                });
+            })
+
+            $('#show').click(function(){
+                $('p').show('fast');
+            })
+
+            // toggle ဆိုတာ function က ရှေ့က hide ရဲ့ property ရော show ရဲ့ property ရော နှစ်ခုလုံး အသုံးဝင်စေတယ် 
+
+            $('#toggle').click(function(){
+                $('p').toggle('slow')
+            })
+
+            // fadeOut ဆိုတာ စာကို တစ်ဖြေးဖြေးမှိန်သွားစေတာ
+            $('#fade_out').click(function(){
+                $('p').fadeOut(3000);
+            })
+
+            // fadeIn ဆိုတာ စာကို တစ်ဖြေးဖြေးလင်းသွားစေတာ
+            $('#fade_in').click(function(){
+                $('p').fadeIn(3000);
+            })
+
+            // fadeToggle ဆိုတာ fadeIn and fadeOut နှစ်ခုလုံးရဲ့ property ကို သက်ရောက်စေတာ
+            $('#fade_toggle').click(function(){
+                $('p').fadeToggle(3000);
+            })
+
+            // fadeTo effect တွေရဲ့ () ထဲမှာ speed , opicity တွေ ထည့်လို့ရတယ်
+            $('#fade_to_1').click(function(){
+                $('p').fadeTo(2000,0.1);
+            })
+
+            $('#fade_to_2').click(function(){
+                $('p').fadeTo(2000,1);
+            })
+        })
+    </script>
+</body>
+</html>
