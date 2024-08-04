@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="digital_clock">
+    <p id="day_name"></p>
+    <p id="time">
+        <span id="hour"></span>
+        :
+        <span id="minute"></span>
+        :
+        <span id="second"></span>
+    </p>
+    <p id="clock_system"></p>
+    </div>
+
+    <script>
+
+        function getsecond(){
+            let today = new Date();
+
+            let now_day = today.getDay();
+            let now_hour = today.getHours();
+            let now_minute = today.getMinutes();
+            let now_second = today.getSeconds();
+            let clock_system = "";
+
+
+            if(now_hour > 12){
+                now_hour -= 12;
+                clock_system = "PM"
+            }
+
+
+            if(now_hour == 12){
+                now_hour = 12;
+                clock_system = "AM"
+            }
+
+            now_hour = (now_hour < 10) ? "0" + now_hour : now_hour;
+            now_minute = (now_minute < 10 ) ? "0" + now_minute : now_minute;
+            now_second = (now_second < 10 ) ? "0" + now_second : now_second;
+
+            let day_name = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+            document.getElementById("day_name").innerHTML = day_name[now_day];
+            document.getElementById("hour").innerHTML = now_hour;
+            document.getElementById("minute").innerHTML = now_minute;
+            document.getElementById("second").innerHTML = now_second;
+            document.getElementById("clock_system").innerHTML = clock_system;
+        }
+
+        setInterval(getsecond,1000);
+
+    </script>
+</body>
+</html>

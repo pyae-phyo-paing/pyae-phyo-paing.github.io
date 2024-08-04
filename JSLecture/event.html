@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Function</h1>
+    <img src="image/ascp_image.png" alt="" id="myImage" width="300" height="300" onclick="big()" onmouseout="normal()">
+    <br><br>
+    <input type="text" name="" id="myInput" onchange="showData()">
+    <p id="myResult"></p>
+
+    <script>
+        // onmouseover
+        // onmouseout
+        // onmousedown နှိပ်လိုက်ရင် big function ကို သုံးသွားတယ်
+        // onmouseenter
+        // onclick
+        // onmouseleave ပုံရဲ့ အပြင်ကို ထွက်သွားတယ်ဆိုရင် big function ကို သုံးသွားတယ်
+
+        // onkeyup (input ထဲမှာ ရိုက်လိုက်လျှင် ရိုက်ချင်း စကားလုံးတွေ ပေါ်တယ် )
+        // onkeydown (input ထဲမှာ စကားလုံးတစ်လုံးရိုက်ပြီး နောက်ထပ် တစ်လုံး ရိုက်မှသာလျှင် ရှေ့က ရိုက်ပြီးသား စကားလုံးပေါ်တယ် )
+        // onchange (input ထဲမှာ စကားလုံးတွေ ကို ရိုက်ပြီး enter သို့မဟုတ် input box ရဲ့ အပြင်ကို click မှသာ input ထဲက စကားလုံးတွေ ပေါ်လာတယ်)
+        function big(){
+            let myImage = document.getElementById('myImage');
+            myImage.style.width = "500px";
+            myImage.style.height = "500px"
+        }
+
+        function normal(){
+            let myImage = document.getElementById('myImage');
+            myImage.style.width = "300px";
+            myImage.style.height = "300px";
+        }
+
+        function showData(){
+            let myInput = document.getElementById('myInput');
+            let myData = myInput.value;
+            document.getElementById('myResult').innerHTML = myData;
+        }
+    </script>
+</body>
+</html>

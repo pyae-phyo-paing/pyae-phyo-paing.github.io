@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#digital_clock{
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    margin-left: 400px;
+}
+#day_name, #time, #clock_system{
+    color: white;
+    font-family: "digital";
+}
+
+#day_name{
+    font-size: 40px;
+    margin-left: 500px;
+}
+
+#time{
+    font-size: 150px;
+}
+
+#clock_system{
+    font-size: 40px;
+    margin-left: 500px;
+}
+
+body{
+    background-color: black;
+}
+
+@font-face {
+    font-family: "digital";
+    src: url(fonts/DS-DIGI.TTF);
+}

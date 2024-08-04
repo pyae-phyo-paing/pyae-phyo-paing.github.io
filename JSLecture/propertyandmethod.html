@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Property And Method</h1>
+
+    <p id="createTextNode"></p>
+    <p id="setAttr">This is SetAttritube.</p>
+    <p id="getAttr" style="color: green;">This is GetAttritube</p>
+    <p id="changeColor" style="color: red;">Change Color</p>
+    <button onclick="createText()">Create Text</button>
+    <button onclick="createElementLesson()">Create Element</button>
+    <button onclick="createSetAttr()">Create Set Attritube</button>
+    <button onclick="createGetAttr()">Create Get Attritube</button>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function createText(){
+            let createTextNode = document.getElementById('createTextNode');
+            // createTextNode.innerHTML = "Create Text Node"
+            let createText = document.createTextNode('Create Text Node');
+            createTextNode.appendChild(createText);
+        }
+        function createElementLesson(){
+            let h3 = document.createElement('h3');
+            h3.innerHTML = 'Create Element Node';
+            document.body.appendChild(h3);
+        }
+        function createSetAttr(){
+            let setAttr = document.getElementById('setAttr');
+            setAttr.setAttribute('style','color:red;');
+        }
+        function createGetAttr(){
+            let getAttr = document.getElementById('getAttr');
+            console.log(getAttr.getAttribute('style'));
+        }
+        function changeColor(){
+            let color = document.getElementById('changeColor');
+            // let changeColor = document.getAttribute('style');
+            color.removeAttribute('style');
+            color.setAttribute('style','color:green;')
+        }
+    </script>
+</body>
+</html>
