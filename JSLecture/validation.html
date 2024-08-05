@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            width: 40%;
+            margin: auto;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px 0px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            position: relative;
+            bottom: 20px;
+        }
+
+        button{
+            padding: 10px 20px;
+        }
+    </style>
 
 </head>
 <body>
@@ -44,7 +65,48 @@
                 passwordErrorMessage.style.margin = "0px";
                 return false;
 
-            }else{
+            }else if(email != "" && password == ""){
+                let emailError = document.getElementById('email');
+                let emailErrorMessage = document.getElementById('emailErrorMessage');
+
+                emailError.style.border = "1px solid black";
+                emailErrorMessage.style.opacity = "0";
+
+                let passwordError = document.getElementById('password');
+                let passwordErrorMessage = document.getElementById('passwordErrorMessage');
+
+                passwordError.style.border = "1px solid red";
+                passwordErrorMessage.innerHTML = "Please Fill Your Password!";
+                passwordErrorMessage.style.color = "red";
+                passwordErrorMessage.style.margin = "0px";
+                return false;
+            }else if(email == "" && password != ""){
+                let emailError = document.getElementById('email');
+                let emailErrorMessage = document.getElementById('emailErrorMessage');
+
+                emailError.style.border = "1px solid red";
+                emailErrorMessage.innerHTML = "Please Fill Your Email!";
+                emailErrorMessage.style.color = "red";
+                emailErrorMessage.style.margin = "0px";
+
+                let passwordError = document.getElementById('password');
+                let passwordErrorMessage = document.getElementById('passwordErrorMessage');
+
+                passwordError.style.border = "1px solid black";
+                passwordErrorMessage.style.opacity = "0" ;
+                return false;
+            }else if(email != "" && password != ""){
+                let emailError = document.getElementById('email');
+                let emailErrorMessage = document.getElementById('emailErrorMessage');
+
+                emailError.style.border = "1px solid black";
+                emailErrorMessage.style.opacity = "0";
+
+                let passwordError = document.getElementById('password');
+                let passwordErrorMessage = document.getElementById('passwordErrorMessage');
+
+                passwordError.style.border = "1px solid black";
+                passwordErrorMessage.style.opacity = "0" ;
                 return true;
             }
 
