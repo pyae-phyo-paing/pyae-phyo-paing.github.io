@@ -33,12 +33,16 @@
 
             if(now_hour > 12){
                 now_hour -= 12;
-                clock_system = "PM"
             }
 
 
             if(now_hour == 0){
                 now_hour = 12;
+            }
+
+            if(now_hour >= 12){
+                clock_system = "PM"
+            }else{
                 clock_system = "AM"
             }
 
