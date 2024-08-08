@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div id="add_student">
         <h1>Add Student Registration</h1>
         Name: <input type="text" name="name" id="name"><br><br>
         Email: <input type="email" name="email" id="email"><br><br>
@@ -19,6 +19,22 @@
         </select>
         <br><br>
         <button type="button" id="add">Add</button>
+    </div>
+    <br><br>
+
+    <div id="edit_student">
+        <h1>Update Student Registration</h1>
+        Name: <input type="text" name="name" id="edit-name"><br><br>
+        Email: <input type="email" name="email" id="edit-email"><br><br>
+        Phone: <input type="phone" name="phone" id="edit-phone"><br><br>
+        Years: <select name="year" id="edit-year">
+            <option value="">Choose Year</option>
+            <option value="first">First Year</option>
+            <option value="second">Second Year</option>
+            <option value="third">Third Year</option>
+        </select>
+        <br><br>
+        <button type="button" id="Update">Update</button>
     </div>
     <br><br>
 
@@ -44,7 +60,7 @@
         $(document).ready(function(){
 
             getData();
-
+            $('#edit_student').hide();
 
             function getData(){
                 let getStuString = localStorage.getItem('students'); //အောက်က localstorage.getItem ကို ပဲ ပြန်ခေါ်ထားတာ
@@ -66,7 +82,7 @@
                                 <td>${v.stu_phone}</td>
                                 <td>${v.stu_year}</td>
                                 <td>
-                                    <button class="edit">Edit</button>
+                                    <button class="edit" data-key="${i}" data-name="${v.stu_name}" data-email="${v.stu_email}" data-phone="${v.stu_phone}" data-year="${v.stu_year}">Edit</button>
                                     <button class="delete" data-key="${i}">Delete</button>
                                 </td>
                                 </tr>`;
@@ -75,6 +91,7 @@
                     $('#tbody').html(data);
                 }
             }
+
 
 
             $('#add').click(function(){
@@ -93,6 +110,7 @@
                     stu_phone : phone,
                     stu_year : year
                 }
+
 
                 // CRUD
                 // C - Create
@@ -144,6 +162,20 @@
                         }
                         
                     }
+                })
+
+                $('#tbody').on('click','.edit',function(){
+                    let key = $(this).data('key');
+                    let name = $(this).data('name');
+                    let email = $(this).data('email');
+                    let phone = $(this).data('phone');
+                    let year = $(this).data('year');
+
+                    console.log(key,name,email,phone,year);
+                    
+                    // alert(key);
+                    $('#add_student').hide();
+                    $('#edit_student').show();
                 })
         })
     </script>
