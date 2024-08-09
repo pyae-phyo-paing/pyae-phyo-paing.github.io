@@ -24,6 +24,7 @@
 
     <div id="edit_student">
         <h1>Update Student Registration</h1>
+        <input type="hidden" name="" id="edit-key">
         Name: <input type="text" name="name" id="edit-name"><br><br>
         Email: <input type="email" name="email" id="edit-email"><br><br>
         Phone: <input type="phone" name="phone" id="edit-phone"><br><br>
@@ -176,6 +177,44 @@
                     // alert(key);
                     $('#add_student').hide();
                     $('#edit_student').show();
+
+                    $('#edit-key').val(key);
+                    $('#edit-name').val(name);
+                    $('#edit-email').val(email);
+                    $('#edit-phone').val(phone);
+                    $('#edit-year').val(year);
+                })
+
+                $('#Update').click(function(){
+                    let key = $('#edit-key').val();
+                    let name = $('#edit-name').val();
+                    let email = $('#edit-email').val();
+                    let phone = $('#edit-phone').val();
+                    let year = $('#edit-year').val();
+                    console.log(key,name,email,phone,year);
+
+                    let stuString = localStorage.getItem('students');
+                    if(stuString){
+                        let stuArray = JSON.parse(stuString);
+                        console.log(stuArray[key]);
+
+                        stuArray[key].stu_name = name;
+                        stuArray[key].stu_email = email;
+                        stuArray[key].stu_phone = phone;
+                        stuArray[key].stu_year = year;
+                        console.log(stuArray[key]);
+
+                        let studentData = JSON.stringify(stuArray);
+                        localStorage.setItem('students', studentData);
+
+
+                        getData();
+
+                        $('#edit_student').hide();
+                        $('#add_student').show();
+                                                
+                    }
+                    
                 })
         })
     </script>
