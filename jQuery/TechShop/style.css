@@ -90,3 +90,15 @@
     background-color: blue;
     margin-top: 10px ;
 }
+
+/* Checkout HTMl */
+
+#table{
+    margin-top: 50px ;
+    margin-left: 100px ;
+}
+
+#table tr th, #table tr td{
+    padding: 20px 60px 20px  ;
+    font-size: 20px ;
+}
