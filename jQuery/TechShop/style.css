@@ -102,3 +102,15 @@
     padding: 20px 60px 20px  ;
     font-size: 20px ;
 }
+
+#order_now{
+    margin-top: 30px ;
+    margin-left: 120px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 130px ;
+    height: 50px ;
+    background-color:green;
+    color: white;
+    font-size: 20px;
+}
