@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Strar nav */
+.nav_home1 , .nav_home2{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding-left: 10px;
+}
+
+.sub_nav{
+    position: absolute;
+    left: 1150px;
+    top: 20px;
+}
+
+.it_shop{
+    font-size: 20px;
+    padding: 20px 0px ;
+    margin-left: 60px;
+}
+
+.nav{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .2);
+}
+
+.nav_home2{
+    border: 1px solid blue;
+    border-radius: 5px ;
+    padding: 5px 10px;
+}
+
+.nav_home2_text{
+    border: 1px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    top: -25px;
+    background-color: red;
+    color: white;
+    right: 13px;
+}
+
+/* End nav */
+
+/* Start Body Step 1 */
+
+.sale_image{
+    width: 100%;
+}
+
+.sale_item_collect{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 40px 50px 0px ;
+    grid-column-gap: 40px ;
+    grid-row-gap: 30px ;
+}
+
+.sale_item{
+    border: 1px solid gray;
+    border-radius: 5px ;
+    padding: 20px ;
+}
+
+.sale_item_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sale_item_price{
+    margin-top: 10px ;
+}
+
+.sale_item_button_text{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sale_item_button{
+    width: 90px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px ;
+    background-color: blue;
+    margin-top: 10px ;
+}
+
+/* Checkout HTMl */
+
+#table{
+    margin-top: 50px ;
+    margin-left: 100px ;
+}
+
+#table tr th, #table tr td{
+    padding: 20px 60px 20px  ;
+    font-size: 20px ;
+}
+
+#order_now{
+    margin-top: 30px ;
+    margin-left: 120px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 130px ;
+    height: 50px ;
+    background-color:green;
+    color: white;
+    font-size: 20px;
+}

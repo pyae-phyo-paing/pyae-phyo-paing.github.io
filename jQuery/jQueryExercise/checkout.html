@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawsome/css/all.min.css">
+</head>
+<body>
+    <!-- Start nav -->
+    <div class="nav">
+        <p class="it_shop">IT Shop</p>
+        <p class="sub_nav">
+            <a href="index.html" class="nav_home1">Home</a>
+            <a href="checkout.html" class="nav_home2"><i class="fa-solid fa-cart-shopping"></i></a>
+            <span class="nav_home2_text">0</span>
+        </p>
+     </div>
+     <!-- End nav -->
+
+    <table id="table" border="1" cellspacing="0" cellpadding="25">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Item Name </th>
+                <th>Item Price</th>
+                <th>Qty</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="mytable">
+
+        </tbody>
+    </table>
+
+    <button class="btn btn-lg btn-success" id="order_now">Order Now</button>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
