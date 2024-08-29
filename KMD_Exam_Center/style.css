@@ -166,11 +166,11 @@
 }
 
 .view_exam_list3:hover{
-    background-color: red;
+    background-color: rgb(92, 94, 211);
 }
 
 .view_exam_list:hover{
-    color: black;
+    color: white;
 }
 
 /* End Home Base Notic */
@@ -412,7 +412,7 @@
 }
 
 .home_base_exam_detail_button:hover{
-    background-color:red;
+    background-color:rgb(90, 57, 212);
 }
 
 /* End Home Based Exam Body Step 2 */
