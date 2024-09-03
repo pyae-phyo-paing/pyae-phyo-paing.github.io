@@ -203,4 +203,115 @@ left: 80px;
     width: 100%;
     height: 40px;
   }
+
+  /* Product Advertise */
+
+  .advertise_button{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    margin-left: 20px;
+  }
  
+  .advertise_button a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+  }
+
+  .jmsolution_advertise{
+    background-color: rgb(245, 242, 242);
+    width: 100%;
+    height: 100%;
+  }
+
+/* Hide the image on phone screen sizes (max-width 767px) */
+@media (max-width: 767px) {
+    .soulskin_advertise_image1 {
+        display: none;
+    }
+}
+
+/* Display the image on laptop screen sizes (min-width 992px) */
+@media (min-width: 992px) {
+    .soulskin_advertise_image2 {
+        display:none;
+    }
+}
+
+@media (max-width: 767px) {
+    .soulskin_advertise_image2 {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .soulskin_advertise_image1 {
+        display:block;
+    }
+}
+
+@media (max-width: 768px) {
+    .soulskin_advertise_image1 {
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {
+    .soulskin_advertise_image1 {
+        display: none;
+    }
+}
+
+/* Footer */
+
+.footer_signup{
+    border: none;
+    border-bottom: 2px solid rgba(22, 21, 21, 0.692);
+    width: 400px;
+    outline: none;
+    margin-top: 25px;
+    background-color: rgb(235, 231, 231) ;
+}
+
+.footer_signup_birthday{
+    border: none;
+    border-bottom: 2px solid rgba(22, 21, 21, 0.692);
+    width: 400px;
+    outline: none;
+    margin-top: 20px;
+    background-color: rgb(235, 231, 231);
+}
+
+.footer_signup_button{
+    border: 2px solid black;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.footer_signup_button a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.footer_list{
+    list-style-type: none;
+}
+
+.footer_list li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(235, 231, 231);
+}
