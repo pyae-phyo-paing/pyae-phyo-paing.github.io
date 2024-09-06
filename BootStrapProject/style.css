@@ -30,6 +30,27 @@
     background-color: rgb(63, 219, 63);
 }
 
+
+/* Default width for all screens (can adjust to be more appropriate for phone size) */
+.list-group {
+    width: 100%; /* Full width on small devices */
+  }
+  
+  /* Tablet and larger screens */
+  @media (min-width: 768px) {
+    .list-group {
+      width: 300px; /* Example width for tablets */
+    }
+  }
+  
+  /* Laptop and larger screens */
+  @media (min-width: 1024px) {
+    .list-group {
+      width: 400px; /* Example width for laptops */
+    }
+  }
+
+  
 /* Start Bunner */
 
 .bunner_text{
@@ -315,3 +336,8 @@ left: 80px;
     height: 100%;
     background-color: rgb(235, 231, 231);
 }
+
+/* For Body Page */
+
+
+  
