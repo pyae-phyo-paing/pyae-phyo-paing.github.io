@@ -435,4 +435,85 @@ left: 80px;
       max-width: 600px;
     }
   }
+
+
+/* Start Feedback */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .customer_feedback_body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .feedback-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .feedback_title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .feedback_form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback_label {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .feedback_input, .feedback_textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .feedback_textarea {
+    height: 150px;
+  }
+  
+  .feedback_button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .feedback_button:hover {
+    background-color: #218838;
+  }
+  
+  /* Tablet and above */
+@media (min-width: 768px) {
+    .feedback-container {
+      max-width: 500px;
+    }
+  }
+  
+  /* Laptop and larger screens */
+  @media (min-width: 1024px) {
+    .feedback-container {
+      max-width: 600px;
+    }
+  }
   
