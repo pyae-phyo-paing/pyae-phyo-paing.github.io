@@ -524,4 +524,9 @@ left: 80px;
       max-width: 600px;
     }
   }
-  
+
+  /* Payment  */
+
+  .payment_container{
+    width: 40%;
+  }

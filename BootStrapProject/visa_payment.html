@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Start Nav Bar  -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/new_logo.png" alt="" class="logo_image"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,33 +66,56 @@
             </ul>
           </div>
         </div>
-      </nav>
-      <!-- End Nav Bar -->
+    </nav>
 
+    <!-- Start Payment -->
 
-    <!-- Start For Body Step -->
-  
-                <div class="customer_feedback_body">
-                    <div class="feedback-container">
-                        <h1 class="feedback_title">Customer Feedback</h1>
-                        <form class="feedback_form">
-                        <label for="name" class="feedback_label">Name</label>
-                        <input type="text" id="name" placeholder="Your name" class="feedback_input">
-    
-                        <label for="email" class="feedback_label">Email</label>
-                        <input type="email" id="email" placeholder="Your email" class="feedback_input">
-    
-                        <label for="message" class="feedback_label">Message</label>
-                        <textarea id="message" placeholder="Your feedback" class="feedback_textarea"></textarea>
-    
-                        <button type="submit" class="feedback_button">Submit Feedback</button>
-                        </form>
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header bg-success text-white text-center">
+                <h4>Payment Details</h4>
+              </div>
+              <div class="card-body">
+                <p class="mb-0">Payment Amount</p>
+                <p class="mt-0">50000 MMK</p>
+                <form>
+                  <!-- Name on Card -->
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name on Card</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                  </div>
+                  <!-- Card Number -->
+                  <div class="mb-3">
+                    <label for="card-number" class="form-label">Card Number</label>
+                    <input type="text" class="form-control" id="card-number" placeholder="1234 5678 9101 1121" required>
+                  </div>
+                  <!-- Expiry and CVV -->
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="expiry-date" class="form-label">Expiry Date</label>
+                      <input type="month" class="form-control" id="expiry-date" required>
                     </div>
-                </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="cvv" class="form-label">CVV</label>
+                      <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                    </div>
+                  </div>
+                  <!-- Submit Button -->
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-success">Pay Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Footer -->
 
-  <div class="footer">
+   <div class="footer">
     <div class="container container-fluid">
       <div class="row">
         <div class="col m-0">
@@ -164,8 +187,6 @@
               });
           });
        </script>
-
-       
       
 </body>
 </html>
