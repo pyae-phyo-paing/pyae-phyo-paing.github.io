@@ -30,6 +30,22 @@
     background-color: rgb(63, 219, 63);
 }
 
+.noti_container {
+  position: relative; /* Parent container is relative */
+  display: inline-block;
+}
+
+.noti_container .badge {
+  position: absolute; /* Badge is positioned absolutely relative to the cart */
+  top: -10px; /* Adjust the position vertically */
+  right: -10px; /* Adjust the position horizontally */
+  background-color: red; /* Badge background color */
+  color: white; /* Badge text color */
+  border-radius: 50%; /* Make the badge circular */
+  padding: 5px 10px; /* Padding inside the badge */
+  font-size: 12px; /* Font size of the badge number */
+}
+
 
 /* Default width for all screens (can adjust to be more appropriate for phone size) */
 .list-group {
@@ -54,6 +70,7 @@
     outline: none;
     background-color: rgba(255, 255, 255, 0.877);
   }
+
   
 /* Start Bunner */
 
@@ -529,4 +546,23 @@ left: 80px;
 
   .payment_container{
     width: 40%;
+  }
+
+  /* Payment Table  */
+
+  .payment_table{
+    display: grid;
+    place-items: center;
+  }
+
+  .payment_type_image{
+    width: 70px;
+  }
+
+  .kpay_scan_image{
+    width: 320px;
+  }
+
+  .wavepay_scan_image{
+    width: 320px;
   }

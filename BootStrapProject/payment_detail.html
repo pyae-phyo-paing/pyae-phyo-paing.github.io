@@ -72,28 +72,124 @@
       </nav>
       <!-- End Nav Bar -->
 
+      <!-- Payment Detail Table -->
 
-    <!-- Start For Body Step -->
-  
-                <div class="customer_feedback_body">
-                    <div class="feedback-container">
-                        <h1 class="feedback_title">Customer Feedback</h1>
-                        <form class="feedback_form">
-                        <label for="name" class="feedback_label">Name</label>
-                        <input type="text" id="name" placeholder="Your name" class="feedback_input">
-    
-                        <label for="email" class="feedback_label">Email</label>
-                        <input type="email" id="email" placeholder="Your email" class="feedback_input">
-    
-                        <label for="message" class="feedback_label">Message</label>
-                        <textarea id="message" placeholder="Your feedback" class="feedback_textarea"></textarea>
-    
-                        <button type="submit" class="feedback_button">Submit Feedback</button>
-                        </form>
-                    </div>
+      <div class="mt-5 text-center">
+        <img src="images/new_logo.png" alt="" style="width: 150px;">
+        <h4 class="text-center text-success mt-0 about_title">Skincare Collections</h4>
+      </div>
+
+      <div class="container mt-5">
+        <table class="table mx-auto table-bordered text-center">
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Item Name</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Skin Boost Niacinamide 15% Serum</td>
+              <td><button class="px-1">+</button><span class="px-2">1</span><button class="px-1">-</button></td>
+              <td>25000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Daily Hydro Sun Essence</td>
+              <td><button class="px-1">+</button><span class="px-2">1</span><button class="px-1">-</button></td>
+              <td>19500</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Garnier Vitamin C Serum</td>
+              <td><button class="px-1">+</button><span class="px-2">1</span><button class="px-1">-</button></td>
+              <td>34000</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Therapy Tropical Zest</td>
+              <td><button class="px-1">+</button><span class="px-2">1</span><button class="px-1">-</button></td>
+              <td>10000</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Natural Glow Body Lotion</td>
+              <td><button class="px-1">+</button><span class="px-2">1</span><button class="px-1">-</button></td>
+              <td>16000</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>PURE VITAMIN A FIRMING MASK</td>
+              <td><button class="px-1">+</button><span class="px-2">1</span><button class="px-1">-</button></td>
+              <td>5000</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="fw-bold">Total Fee</td>
+              <td>109500</td>
+            </tr>
+          </tbody>
+        </table>
+
+         <!-- Button trigger modal -->
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-success mb-4" style="font-size: 20px;" data-bs-toggle="modal" data-bs-target="#paymentMethod">Continue to check out</button>
+        </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="paymentMethod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Choose Your Payment Type!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body">
+                  <button class="btn" data-bs-toggle="modal" data-bs-target="#kpayScan"><img src="images/kpay_method_image.png" alt="" class="payment_type_image"></button>
+                  <button class="btn" data-bs-toggle="modal" data-bs-target="#wavepayScan"><img src="images/wavepay_method_image.jpg" alt="" class="payment_type_image"></button>
+                  <button class="btn"><a href="visa_payment.html"><img src="images/visapayment_method_image.jpg" alt="" class="payment_type_image"></a></button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- Footer -->
+          <div class="modal fade" id="kpayScan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Kpay Scan</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="images/kpay_scan.jpg" alt="" class="kpay_scan_image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="wavepayScan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Wavepay Scan</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="images/wavepay_scan.jpg" alt="" class="wavepay_scan_image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>      
+      
+      <!-- Footer -->
 
   <div class="footer">
     <div class="container container-fluid">
@@ -167,8 +263,6 @@
               });
           });
        </script>
-
-       
       
 </body>
 </html>
